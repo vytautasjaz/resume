@@ -6,7 +6,7 @@ import devLogo from './images/social/dev.svg';
 
 import './App.css';
 
-function Appgit() {
+function App() {
   return (
     <div className='App'>
       <header className='Header'>
