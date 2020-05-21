@@ -1,4 +1,13 @@
 import React from 'react';
+
+// Components
+import Title from './components/Title';
+import Separator from './components/Separator';
+import Badge from './components/Badge';
+import SocialLink from './components/SocialLink';
+import ContetntBlock from './components/ContentBlock';
+
+//Images
 import linkedInLogo from './images/social/linkedin.svg';
 import twitterLogo from './images/social/twitter.svg';
 import gitHubLogo from './images/social/github.svg';
@@ -15,107 +24,67 @@ function App() {
         <div className='Header-name'> SPOHIE ALPERT </div>
         <div className='Header-title'> PROGRAMMER </div>
       </header>
+
       <main className='Main'>
-        <div className='Main-links-box'>
-          <h3>LINKS</h3>
-          <div className='Underline'>
-            <div className='Underline-box'></div>
-            <div className='Underline-line'></div>
-          </div>
-          <ul className='Links'>
-            <li>
-              <a href='#' target='blank'>
-                <img src={linkedInLogo} />
-                LINKEDIN/username
-              </a>
-            </li>
-            <li>
-              <a href='#' target='blank'>
-                <img src={twitterLogo} />
-                TWITER/username
-              </a>
-            </li>
-            <li>
-              <a href='#' target='blank'>
-                <img src={gitHubLogo} />
-                GITHUB/username
-              </a>
-            </li>
-            <li>
-              <a href='#' target='blank'>
-                <img src={devLogo} />
-                BLOG/username
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className='Main-about-box'>
-          <h3>ABOUT ME</h3>
-          <div className='Underline'>
-            <div className='Underline-box'></div>
-            <div className='Underline-line'></div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
-            justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam
-            vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et,
-            lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia
-            porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit
-            lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam
-            scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum
-            vitae mattis diam.
-          </p>
-        </div>
+        <ContetntBlock title='Links' size='Single'>
+          <SocialLink src={linkedInLogo} link='http://www.linkedin.com'>
+            LINKEDIN/username
+          </SocialLink>
+          <SocialLink src={twitterLogo} link='#'>
+            TWITTER/username
+          </SocialLink>
+          <SocialLink src={gitHubLogo} link='#'>
+            GITHUB/username
+          </SocialLink>
+          <SocialLink src={devLogo} link='#'>
+            BLOG/username
+          </SocialLink>
+        </ContetntBlock>
 
-        <div className='Main-triple-box'>
-          <h3>EDUCATION</h3>
-          <div className='Underline'>
-            <div className='Underline-box'></div>
-            <div className='Underline-line'></div>
-          </div>
+        <ContetntBlock title='About me' size='Double'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+          justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel
+          tempor lacinia. Suspendisse non augue egestas, dapibus justo et,
+          lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia
+          porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit
+          lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam
+          scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum
+          vitae mattis diam.
+        </ContetntBlock>
+
+        <ContetntBlock title='Education' size='Triple'>
           <div className='Education-school'>
             <p>SCHOOL NAME</p>
             <p>2009 - 2013</p>
             <p>Degree</p>
           </div>
-          <div className='Underline-line'></div>
+          <div className='Line'></div>
           <div className='Education-school'>
             <p>SCHOOL NAME</p>
             <p>2009 - 2013</p>
             <p>Degree</p>
           </div>
-        </div>
-        <div className='Main-triple-box'>
-          <h3>PERSONAL SKILLS</h3>
-          <div className='Underline'>
-            <div className='Underline-box'></div>
-            <div className='Underline-line'></div>
-          </div>
-          <p className='Skill-teal'>TEAMWORK</p>
-          <p className='Skill-yellow'>COMMUNICATION</p>
-          <p className='Skill-red'>ORGANIZATION</p>
-          <p className='Skill-yellow'>REACT.JS</p>
-        </div>
+        </ContetntBlock>
 
-        <div className='Main-triple-box'>
-          <h3>TECHNICAL SKILLS</h3>
-          <div className='Underline'>
-            <div className='Underline-box'></div>
-            <div className='Underline-line'></div>
-          </div>
-          <p className='Skill-teal'>HTML</p>
-          <p className='Skill-teal'>CSS/SCSS</p>
-          <p className='Skill-yellow'>JAVASCRIPT</p>
-          <p className='Skill-yellow'>REACT.JS</p>
-        </div>
+        <ContetntBlock title='Personal Skills' size='Triple'>
+          <Badge color='Teal'>Teamwork</Badge>
+          <Badge color='Yellow'>Communication</Badge>
+          <Badge color='Red'>Organization</Badge>
+          <Badge color='Yellow'>React.js</Badge>
+        </ContetntBlock>
+
+        <ContetntBlock title='Technical Skills' size='Triple'>
+          <Badge color='Teal'>HTML</Badge>
+          <Badge color='Teal'>CSS/SCSS</Badge>
+          <Badge color='Yellow'>Javascript</Badge>
+          <Badge color='Yellow'>react.js</Badge>
+        </ContetntBlock>
 
         <div className='Main-full-box'>
-          <h3>WORK EXPERINCE</h3>
-          <div className='Underline'>
-            <div className='Underline-box'></div>
-            <div className='Underline-line'></div>
-          </div>
+          <Title level='3'>Work experience</Title>
+          <Separator />
+
           <div className='Full-box-content'>
             <div className='Main-triple-box'>
               <div className='Job-title'>
@@ -185,7 +154,7 @@ function App() {
       </main>
 
       <div className='Footer'>
-        <div className='Underline-line'></div>
+        <div className='Line'></div>
 
         <div className='Footer-triple-box'>
           <div className='Black-box'> ADRESS </div>

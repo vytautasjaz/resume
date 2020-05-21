@@ -63,106 +63,15 @@
   width: 1000px;
 }
 
-.Main-links-box {
-  margin: 10px;
-  padding: 15px;
-  width: 200px;
-  flex: 1;
-  min-width: 30%;
-}
-
 .Links {
   list-style-type: none;
 }
 
-.Links li {
-  position: relative;
-  line-height: 35px;
-}
-
-.Links a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: 500;
-}
-
-.Links a:hover {
-  color: #7abcac;
-}
-
-.Links img {
-  position: absolute;
-  left: -40px;
-  height: 30px;
-  width: 30px;
-}
-
-.Main-about-box {
-  margin: 10px;
-  padding: 15px;
-  flex: 2;
-  min-width: 60%;
-}
-
-.Main-triple-box {
-  margin: 0 10px;
-  padding: 15px;
-  flex: 1;
-  min-width: 25%;
-}
 
 .Main-full-box {
   margin: 0 10px;
   padding: 15px;
   width: 100%;
-}
-
-h3 {
-  text-align: left;
-  padding: 5px;
-  margin: 0;
-}
-
-.Underline {
-  display: flex;
-  align-items: center;
-}
-
-.Underline-box {
-  width: 72px;
-  height: 10px;
-  background: #7abcac;
-}
-.Underline-line {
-  margin: 0;
-  padding: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #dcdcdc;
-}
-
-.Skill-teal {
-  padding: 0 5px;
-  background-color: #7abcac;
-  border-radius: 11px;
-  font-weight: bold;
-  font-size: small;
-}
-
-.Skill-yellow {
-  padding: 0 5px;
-  background-color: #d8da79;
-  border-radius: 11px;
-  font-weight: bold;
-  font-size: small;
-}
-
-.Skill-red {
-  padding: 0 5px;
-  background-color: #c29486;
-  border-radius: 11px;
-  font-weight: bold;
-  font-size: small;
 }
 
 .Education-school {
@@ -239,4 +148,12 @@ h3 {
 .Footer-triple-box p {
   text-align: center;
   margin: 0 10px;
+}
+
+.Line {
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #dcdcdc;
 }
